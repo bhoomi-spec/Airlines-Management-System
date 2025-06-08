@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyWay Airlines - Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>SkyWay Airlines</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="flights.html">Flights</a></li>
+                <li><a href="bookings.html">Bookings</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn login-btn">Login</a>
+                <a href="register.html" class="btn register-btn">Register</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to SkyWay Airlines</h1>
+                <p>Your journey begins with us</p>
+                <a href="flights.html" class="btn primary-btn">Book a Flight</a>
+            </div>
+        </section>
+
+        <section class="search-section">
+            <div class="container">
+                <h2>Find Your Flight</h2>
+                <form id="flight-search-form">
+                    <div class="form-group">
+                        <label for="departure">From</label>
+                        <input type="text" id="departure" placeholder="Departure City">
+                    </div>
+                    <div class="form-group">
+                        <label for="destination">To</label>
+                        <input type="text" id="destination" placeholder="Destination City">
+                    </div>
+                    <div class="form-group">
+                        <label for="departure-date">Departure Date</label>
+                        <input type="date" id="departure-date">
+                    </div>
+                    <div class="form-group">
+                        <label for="return-date">Return Date</label>
+                        <input type="date" id="return-date">
+                    </div>
+                    <div class="form-group">
+                        <label for="passengers">Passengers</label>
+                        <select id="passengers">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5+</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Search Flights</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Why Choose SkyWay Airlines?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-plane"></i>
+                        <h3>Global Network</h3>
+                        <p>Connect to over 150 destinations worldwide</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>On-Time Performance</h3>
+                        <p>Consistently ranked among the most punctual airlines</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-star"></i>
+                        <h3>Premium Service</h3>
+                        <p>Award-winning service at every step of your journey</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Safety First</h3>
+                        <p>Your safety is our top priority</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="destinations">
+            <div class="container">
+                <h2>Popular Destinations</h2>
+                <div class="destinations-grid">
+                    <div class="destination-card">
+                        <img src="images/new-york.jpg" alt="New York">
+                        <div class="destination-info">
+                            <h3>New York</h3>
+                            <p>From $299</p>
+                            <a href="flights.html" class="btn secondary-btn">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="destination-card">
+                        <img src="images/london.jpg" alt="London">
+                        <div class="destination-info">
+                            <h3>London</h3>
+                            <p>From $399</p>
+                            <a href="flights.html" class="btn secondary-btn">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="destination-card">
+                        <img src="images/tokyo.jpg" alt="Tokyo">
+                        <div class="destination-info">
+                            <h3>Tokyo</h3>
+                            <p>From $599</p>
+                            <a href="flights.html" class="btn secondary-btn">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="destination-card">
+                        <img src="images/paris.jpg" alt="Paris">
+                        <div class="destination-info">
+                            <h3>Paris</h3>
+                            <p>From $449</p>
+                            <a href="flights.html" class="btn secondary-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SkyWay Airlines</h3>
+                    <p>Your trusted partner for air travel since 2005.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="flights.html">Flights</a></li>
+                        <li><a href="bookings.html">Bookings</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Airport Road, Skyville</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@skywayairlines.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit" class="btn primary-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SkyWay Airlines. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

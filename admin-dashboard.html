@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - SkyWay Airlines</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dashboard-body">
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>SkyWay Airlines</h2>
+                <p>Admin Dashboard</p>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active">
+                        <a href="admin-dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="admin-flights.html"><i class="fas fa-plane"></i> Flights</a>
+                    </li>
+                    <li>
+                        <a href="admin-passengers.html"><i class="fas fa-users"></i> Passengers</a>
+                    </li>
+                    <li>
+                        <a href="admin-bookings.html"><i class="fas fa-ticket-alt"></i> Bookings</a>
+                    </li>
+                    <li>
+                        <a href="admin-aircraft.html"><i class="fas fa-plane-departure"></i> Aircraft</a>
+                    </li>
+                    <li>
+                        <a href="admin-staff.html"><i class="fas fa-user-tie"></i> Staff</a>
+                    </li>
+                    <li>
+                        <a href="admin-reports.html"><i class="fas fa-chart-bar"></i> Reports</a>
+                    </li>
+                    <li>
+                        <a href="admin-settings.html"><i class="fas fa-cog"></i> Settings</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            </div>
+        </aside>
+
+        <main class="dashboard-main">
+            <header class="dashboard-header">
+                <div class="header-search">
+                    <input type="text" placeholder="Search...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="header-actions">
+                    <div class="notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">3</span>
+                    </div>
+                    <div class="messages">
+                        <i class="fas fa-envelope"></i>
+                        <span class="badge">5</span>
+                    </div>
+                    <div class="user-profile">
+                        <img src="images/admin-avatar.jpg" alt="Admin">
+                        <span>Admin User</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="dashboard-content">
+                <div class="dashboard-overview">
+                    <h2>Dashboard Overview</h2>
+                    <div class="stats-cards">
+                        <div class="stat-card">
+                            <div class="stat-card-icon">
+                                <i class="fas fa-plane"></i>
+                            </div>
+                            <div class="stat-card-info">
+                                <h3>Total Flights</h3>
+                                <p class="stat-number">1,245</p>
+                                <p class="stat-change positive">+12% from last month</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-card-info">
+                                <h3>Passengers</h3>
+                                <p class="stat-number">24,567</p>
+                                <p class="stat-change positive">+8% from last month</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card-icon">
+                                <i class="fas fa-ticket-alt"></i>
+                            </div>
+                            <div class="stat-card-info">
+                                <h3>Bookings</h3>
+                                <p class="stat-number">18,342</p>
+                                <p class="stat-change positive">+15% from last month</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card-icon">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <div class="stat-card-info">
+                                <h3>Revenue</h3>
+                                <p class="stat-number">$3.2M</p>
+                                <p class="stat-change positive">+10% from last month</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-charts">
+                    <div class="chart-container">
+                        <h3>Booking Statistics</h3>
+                        <canvas id="bookings-chart"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <h3>Revenue Overview</h3>
+                        <canvas id="revenue-chart"></canvas>
+                    </div>
+                </div>
+
+                <div class="recent-activity">
+                    <h3>Recent Activity</h3>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-ticket-alt"></i>
+                            </div>
+                            <div class="activity-details">
+                                <h4>New Booking</h4>
+                                <p>John Doe booked a flight from New York to London</p>
+                                <span class="activity-time">5 minutes ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-plane-departure"></i>
+                            </div>
+                            <div class="activity-details">
+                                <h4>Flight Departed</h4>
+                                <p>Flight SK-103 departed from Los Angeles to Tokyo</p>
+                                <span class="activity-time">30 minutes ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-user-plus"></i>
+                            </div>
+                            <div class="activity-details">
+                                <h4>New User Registration</h4>
+                                <p>Jane Smith created a new account</p>
+                                <span class="activity-time">1 hour ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <div class="activity-details">
+                                <h4>Flight Delayed</h4>
+                                <p>Flight SK-205 from Paris to Dubai delayed by 1 hour</p>
+                                <span class="activity-time">2 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-plane-arrival"></i>
+                            </div>
+                            <div class="activity-details">
+                                <h4>Flight Arrived</h4>
+                                <p>Flight SK-422 arrived at Singapore from Sydney</p>
+                                <span class="activity-time">3 hours ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/admin-dashboard.js"></script>
+</body>
+</html>
